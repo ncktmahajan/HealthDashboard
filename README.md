@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+Project Report: Healthcare Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Introduction
+This project involves developing a healthcare dashboard with React and Python. The React-based implementation creates a responsive and modern web interface, while Python (Tkinter) is used to demonstrate a lightweight desktop GUI alternative. Both implementations aim to provide an intuitive user experience for entering and submitting user data.
 
-## Available Scripts
+Objective
+To create an efficient and visually appealing healthcare dashboard using two frontend approaches: a web-based solution with React and a desktop-based solution with Python (Tkinter).
 
-In the project directory, you can run:
+Development Process:
+1.	Understanding Requirements
 
-### `npm start`
+- Input Fields:
+  - Name (text input)
+  - Age (dropdown menu with values from 1–100)
+  - File Upload (PDF format)
+- Submit Button:
+  - Collects and validates user input.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Additional Features:
+  - Clean and minimalistic UI design.
+  - Responsive web layout for React.
+  - Structured desktop GUI for Tkinter.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+2.	Web-Based Frontend Development (React)
+ 
+Step 1: Setting Up React Environment
+1. Initialize React App:
+   - Command: `npx create-react-app healthcare-dashboard`
+   - A structured environment was created for scalable development.
+2. Install Dependencies:
+   - Installed `styled-components` for modular styling.
+   - Used `react-icons` for visual enhancements.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Step 2: Designing the Layout
+- UI/UX Design Principles:
+  - Adopted a healthcare-friendly color palette (e.g., soothing blues and whites).
+  - Integrated a card-based layout for structured information input.
+- Components:
+  - Header: Displays the title and branding.
+  - Form: Houses input fields for user data entry.
+  - Popup: Provides feedback for successful or incomplete submissions.
 
-### `npm run build`
+Step 3: Implementing Functionalities
+- Input Fields:
+  - Name input using `<input type="text">`.
+  - Dropdown menu for age, dynamically generated with values 1–100.
+  - File upload using `<input type="file">` with a custom label.
+- Form Validation:
+  - Ensured mandatory fields (name, age, file) are completed before submission.
+  - Highlighted missing or incorrect fields dynamically.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Step 4: Responsive Design
+- Utilized CSS grid and flexbox for adaptive layouts.
+- Added media queries to ensure the dashboard works on various screen sizes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Step 5: Testing
+- Verified field functionality and responsiveness across devices.
+- Checked proper file upload handling and notification animations.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+3.	Desktop-Based Frontend Development (Python with Tkinter)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Step 1: Setting Up Tkinter
+1. Environment:
+   - Tkinter is a built-in Python library, making it lightweight and accessible.
+   - No additional installations were required.
+2. Core Components:
+   - `Entry` widget for text input (name).
+   - `OptionMenu` for age dropdown selection.
+   - File upload handled using `askopenfile`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Step 2: Designing the Layout
+- UI Principles:
+  - Organized widgets for logical grouping and alignment.
+  - Applied padding for visual clarity.
+-Implementation:
+  - Used the `grid` layout manager for structured positioning.
+  - Created labels for instructions alongside inputs.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Step 3: Functionalities
+- Input Fields:
+  - `Entry` widget for text input.
+  - Dropdown menu populated with values 1–100 using `OptionMenu`.
+  - File upload triggered by a button, opening a file dialog for PDF selection.
+- Form Validation:
+  - Checked if all fields were filled before submission.
+  - Displayed error messages for incomplete fields.
+  
+Step 4: Testing
+- Verified that all widgets behaved as expected across various resolutions.
+- Tested file selection and ensured it restricted to `.pdf` files.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Challenges Faced
+1. Responsive Design in Tkinter:
+   - Solution: Used `grid` manager with weight configurations for resizing.
+2. Dropdown Population:
+   - Solution: Dynamically generated values for the age dropdown in both React and Tkinter.
+3. File Upload Restrictions:
+   - Solution: Implemented logic to ensure only `.pdf` files could be selected.
 
-## Learn More
+Technologies Used
+1. React:
+   - Core framework for web-based UI.
+   - Styled-Components for modular styling.
+   - React Icons for intuitive iconography.
+2. Python (Tkinter):
+   - Lightweight GUI toolkit for desktop applications.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Conclusion
+This project successfully demonstrates a healthcare dashboard using two different frontend approaches. The React implementation provides a responsive, modern web application, while the Tkinter implementation showcases a compact desktop alternative. Both designs emphasize user-friendly interfaces and functionality tailored to the healthcare domain.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
