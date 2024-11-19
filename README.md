@@ -23,7 +23,11 @@ Development Process:
 
 
 2.	Web-Based Frontend Development (React)
- 
+
+UI Overview:
+ ![chrome_xc3cME0jFO](https://github.com/user-attachments/assets/58dd01fd-4799-439b-859d-3167477e6aae)
+ ![chrome_srDoBRcc1u](https://github.com/user-attachments/assets/e0f19e8e-18ab-4ed0-a143-618e33b9ace7)
+
 Step 1: Setting Up React Environment
 1. Initialize React App:
    - Command: `npx create-react-app healthcare-dashboard`
@@ -60,6 +64,11 @@ Step 5: Testing
 
 
 3.	Desktop-Based Frontend Development (Python with Tkinter)
+
+UI Overview:
+![python_zgDwv1dyQa](https://github.com/user-attachments/assets/8bdcbcc0-8b71-416f-869a-c5a4e9511e05)
+![python_epb21KxN8x](https://github.com/user-attachments/assets/fa70a032-62d8-4ffb-8a45-bdd7167123e0)
+
 
 Step 1: Setting Up Tkinter
 1. Environment:
